@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+/* ════════════════════════════════
+   DARK THEME  (default)
+   ════════════════════════════════ */
+:root {
+  --bg:           #0a0f1e;
+  --bg2:          #0d1530;
+  --card:         #111827;
+  --card2:        #1a2440;
+  --border:       rgba(255,255,255,0.06);
+  --border2:      rgba(255,255,255,0.10);
+  --t1:           #e2e8f0;
+  --t2:           #94a3b8;
+  --t3:           #64748b;
+  --teal:         #00d9c0;
+  --violet:       #7c3aed;
+  --nav:          rgba(10,15,30,0.92);
+  --shadow:       rgba(0,0,0,0.35);
+}
+
+/* ════════════════════════════════
+   LIGHT THEME
+   ════════════════════════════════ */
+[data-theme="light"] {
+  --bg:           #f1f5f9;
+  --bg2:          #e8edf5;
+  --card:         #ffffff;
+  --card2:        #f8fafc;
+  --border:       rgba(0,0,0,0.08);
+  --border2:      rgba(0,0,0,0.12);
+  --t1:           #0f172a;
+  --t2:           #475569;
+  --t3:           #94a3b8;
+  --teal:         #0d9488;
+  --violet:       #6d28d9;
+  --nav:          rgba(241,245,249,0.92);
+  --shadow:       rgba(0,0,0,0.08);
+}
+
+/* ════════════════════════════════
+   BASE
+   ════════════════════════════════ */
+* { scroll-behavior: smooth; box-sizing: border-box; }
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--t1);
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,h2,h3,h4 { font-family: 'Space Grotesk', sans-serif; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 3px; }
+
+/* ════════════════════════════════
+   REUSABLE UTILITY CLASSES
+   (use these in components instead of hardcoded bg-[#111827])
+   ════════════════════════════════ */
+.t-bg      { background-color: var(--bg); }
+.t-bg2     { background-color: var(--bg2); }
+.t-card    { background-color: var(--card); }
+.t-card2   { background-color: var(--card2); }
+.t-border  { border-color: var(--border) !important; }
+.t-border2 { border-color: var(--border2) !important; }
+.t-t1      { color: var(--t1); }
+.t-t2      { color: var(--t2); }
+.t-t3      { color: var(--t3); }
+
+/* ════════════════════════════════
+   GRADIENT TEXT
+   ════════════════════════════════ */
+.gradient-text {
+  background: linear-gradient(135deg, var(--teal), var(--violet));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--teal), var(--violet));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ════════════════════════════════
+   HERO MESH BACKGROUND
+   ════════════════════════════════ */
+.mesh-bg {
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(0,217,192,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(124,58,237,0.07) 0%, transparent 60%),
+    var(--bg);
+}
+
+/* ════════════════════════════════
+   NAVBAR
+   ════════════════════════════════ */
+.nav-scrolled {
+  background-color: var(--nav) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ════════════════════════════════
+   CARD
+   ════════════════════════════════ */
+.card-glow:hover {
+  box-shadow: 0 0 28px rgba(0,217,192,0.12), 0 0 56px rgba(124,58,237,0.06);
+}
+[data-theme="light"] .card-glow:hover {
+  box-shadow: 0 6px 30px rgba(0,0,0,0.10);
+}
+
+/* ════════════════════════════════
+   SECTION STRIPE (alternating bg)
+   ════════════════════════════════ */
+.section-stripe {
+  background: linear-gradient(to bottom, transparent, var(--bg2) 50%, transparent);
+}
