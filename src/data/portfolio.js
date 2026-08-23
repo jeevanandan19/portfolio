@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Jeevanandan V",
   roles: ["AI & ML Engineer", "Python Developer", "NLP Enthusiast", "LangChain Developer", "Full-Stack AI Builder"],
-  location: "Krishnagiri, Tamil Nadu, India",
+  location: "Chennai, Tamil Nadu, India",
   email: "jeevanandan026@gmail.com",
   phone: "+91 8248511767",
   linkedin: "https://linkedin.com/in/jeevanandan-v",
@@ -90,12 +90,12 @@ export const projects = [
 
 export const experience = [
   {
-    role: "Software Development Intern",
+    role: "Java Fullstack Development Intern",
     company: "Jspiders (A Unit of Test Yantra Software Solutions)",
     type: "Bengaluru, Karnataka, India",
     period: "Feb 2026 – Mar 2026",
     points: [
-      "Completed comprehensive Java Full Stack development training under Mr. Keshava",
+      "Completed comprehensive Java Full Stack development training",
       "Gained hands-on experience in frontend and backend development technologies",
       "Developed full-stack web applications integrating database connectivity and RESTful APIs",
       "Demonstrated strong work ethic and dedication throughout the internship program",
@@ -142,7 +142,7 @@ export const education = [
     degree: "HSC (Higher Secondary Certificate)",
     institution: "Govt Higher Secondary School Puliyampatti",
     period: "2022",
-    score: "79.66%",
+    score: "79.33%",
     icon: "📚",
   },
   {
