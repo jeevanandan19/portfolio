@@ -60,6 +60,15 @@ export const projects = [
     icon: "🤖",
   },
   {
+    title: "AI Resume Screening Agent",
+    description:
+      "A FastAPI-based intelligent resume screening agent that parses multi-format candidate profiles (PDF, DOCX, TXT), computes NLP semantic similarity using SentenceTransformers, applies transparent weighted scoring with missing skill penalties, and delivers an interactive glassmorphic dashboard with evidence-based AI explanations.",
+    tech: ["Python", "FastAPI", "SentenceTransformers", "NLP", "Google GenAI", "PyMuPDF", "Pydantic", "Glassmorphic UI"],
+    github: "https://github.com/jeevanandan19/Resume-Screening-Agent",
+    color: "emerald",
+    icon: "🎯",
+  },
+  {
     title: "Intelligent Research Paper Summarizer with Novelty Detection",
     description:
       "An NLP application that automatically summarizes research papers and detects novelty by comparing semantic similarity against a reference corpus using transformer models. Includes text preprocessing, TF-IDF keyword extraction, and a scoring engine for identifying unique contributions.",
